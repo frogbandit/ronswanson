@@ -9,7 +9,6 @@ Werkzeug==0.9.4
 altgraph==0.10.2
 bdist-mpkg==0.5.0
 binify==0.1.6
-bonjour-py==0.3
 colorama==0.3.2
 docopt==0.6.1
 git-up==1.2.2
