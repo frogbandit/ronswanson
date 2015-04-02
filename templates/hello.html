@@ -1,0 +1,33 @@
+<!doctype html>
+
+<title>Hello from Flask</title>
+
+{% if api_data %}
+  <h1> {{ api_data[0] }}</h1>
+  {% if api_data[1] == 0%}
+  	<img src="/static/img/ronswanson1.jpg">
+  {% elif api_data[1] == 1%}
+  	<img src="/static/img/ronswanson2.jpg">
+  {% elif api_data[1] == 2%}
+  	<img src="/static/img/ronswanson3.jpg">
+  {% elif api_data[1] == 3%}
+  	<img src="/static/img/ronswanson4.jpg">
+  {% elif api_data[1] == 4%}
+  	<img src="/static/img/ronswanson5.jpg">
+  {% elif api_data[1] == 5%}
+  	<img src="/static/img/ronswanson6.jpg">
+  {% elif api_data[1] == 6%}
+  	<img src="/static/img/ronswanson7.jpg">
+  {% elif api_data[1] == 7%}
+  	<img src="/static/img/ronswanson8.jpg">
+  {% elif api_data[1] == 8%}
+  	<img src="/static/img/ronswanson9.jpg">
+  {% else %}
+  	<img src="/static/img/ronswanson10.png">
+  {% endif %}
+{% else %}
+
+
+
+  <h1>Oops!</h1>
+{% endif %}
