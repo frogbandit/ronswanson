@@ -1,10 +1,15 @@
-<!doctype html>
+{% extends "base.html" %}
+{% block title %}Random Ron Swanson{% endblock %}
+
+{% block body %}
+<div class="row">
+  <div class="medium-9 medium-centered columns">
+    <!--   <div class="panel"> -->
 
 
-<title>Random Ron Swanson</title>
-
+<h1><strong>Random Ron Swanson</strong></h1>
 {% if api_data %}
-  <h1> {{ api_data[0] }}</h1>
+  <h3><em> {{ '"' + api_data[0] + '"' }}</em></h3>
   {% if api_data[1] == 0%}
   	<img src="/static/img/ronswanson1.jpg">
   {% elif api_data[1] == 1%}
@@ -27,11 +32,22 @@
   	<img src="/static/img/ronswanson10.png">
   {% endif %}
 
-
-  <h2>Made with love by James</h2>
+  <p>
+  <p>
 {% else %}
 
 
 
   <h1>Oops!</h1>
 {% endif %}
+
+
+    <a class="round button" href="/">More Ron Swanson!</a>
+  <!-- </div> -->
+  <p>
+  <p>
+  <h5>Made with love by James.</h5>
+  </div>
+</div>
+
+{% endblock %}
